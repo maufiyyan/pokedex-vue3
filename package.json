@@ -6,8 +6,7 @@
   "author": "maufiyyan <maufiyyan.fi@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "quasar dev -m pwa",
-    "build": "quasar build -m pwa",
+    "build": "quasar build",
     "start": "node server.js",
     "heroku-postbuild": "yarn && yarn build",
     "lint": "eslint --ext .js,.vue ./",
