@@ -2,6 +2,11 @@
 
 Pokedex
 
+## Install the quasar
+```bash
+yarn global add @quasar/cli
+```
+
 ## Install the dependencies
 ```bash
 yarn
