@@ -6,6 +6,10 @@
   "author": "maufiyyan <maufiyyan.fi@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev -m pwa",
+    "build": "quasar build -m pwa",
+    "start": "node server.js",
+    "heroku-postbuild": "yarn && yarn build",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0"
@@ -13,9 +17,12 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
+    "connect-history-api-fallback": "^2.0.0",
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
+    "serve-static": "^1.15.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"
   },
