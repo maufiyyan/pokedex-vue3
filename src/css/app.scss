@@ -1,0 +1,18 @@
+// app global css in SCSS form
+body {
+  font-size: 1rem;
+}
+.container {
+  background-color: $dark;
+  * {
+    color: #e3e3e3;
+  }
+}
+.p-15 {
+  padding: 15px !important;
+}
+.content {
+  width: 100%;
+  position: relative;
+  padding: 0 15px
+}
