@@ -6,9 +6,10 @@
   "author": "maufiyyan <maufiyyan.fi@gmail.com>",
   "private": true,
   "scripts": {
-    "build": "quasar build",
-    "build-pwa": "quasar build -m pwa",
-    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build-pwa",
+    "dev": "quasar dev -m pwa",
+    "build": "quasar build -m pwa",
+    "start": "node server.js",
+    "heroku-postbuild": "yarn && yarn build",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0"
